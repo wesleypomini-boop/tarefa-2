@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Pomini | Desenvolvedor Front End</title>
+    <style>
+        /* CSS Integrado */
+        :root {
+            --bg-dark: #0f172a;
+            --accent: #f97316;
+            --text-light: #e2e8f0;
+            --card-bg: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header { padding: 1.5rem 10%; background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        section { padding: 80px 10%; }
+        
+        #hero { text-align: center; padding: 120px 10%; }
+        #hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        #hero span { color: var(--accent); }
+
+        h2 { margin-bottom: 20px; color: var(--accent); }
+
+        .skills span { 
+            display: inline-block; padding: 8px 16px; margin: 5px; 
+            background: var(--card-bg); border: 1px solid var(--accent); border-radius: 20px;
+        }
+
+        .grid-projetos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 2rem; border-radius: 12px; border-bottom: 3px solid var(--accent); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); background: #2d3a4f; }
+
+        .btn { 
+            background: var(--accent); color: white; padding: 12px 30px; 
+            text-decoration: none; border-radius: 6px; display: inline-block; margin-top: 20px; font-weight: bold;
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><strong>Wesley</strong>Pomini<span>.dev</span></div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Olá, eu sou <span>Wesley Pomini</span></h1>
+            <p>Estudante de desenvolvimento, transformando linhas de código em soluções.</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Estou em constante aprendizado no mundo da programação. Focado em construir uma base sólida no Front End e pronto para encarar desafios que me façam evoluir profissionalmente.</p>
+            <div class="skills" style="margin-top: 20px;">
+                <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>React</span>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="grid-projetos">
+                <article class="card">
+                    <h3>Meu Primeiro Projeto</h3>
+                    <p>Uma breve descrição sobre um projeto que você desenvolveu durante seus estudos.</p>
+                    <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.8rem;">Repositório</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Vamos conversar?</h2>
+            <p>Sinta-se à vontade para entrar em contato comigo por e-mail.</p>
+            <a href="mailto:seuemail@exemplo.com" class="btn">Enviar E-mail</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wesley Pomini. Desenvolvendo o futuro.</p>
+    </footer>
+
+</body>
+</html>
